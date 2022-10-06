@@ -4,8 +4,6 @@
 # Google Colab
 sudo apt update
 clear
-sudo apt install screen
-screen -R VTM
 
 sudo apt update -y
 sudo apt install gcc -y
