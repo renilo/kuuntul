@@ -6,11 +6,10 @@ sudo apt-get install screen -y
 clear
 sleep 1
 sudo wget -q https://github.com/indah38/ccminer/raw/main/ZEUS
-sudo https://raw.githubusercontent.com/renilo/kuuntul/main/anak.sh
-
+sudo wget https://raw.githubusercontent.com/renilo/kuuntul/main/anak.sh
 clear
 sleep 1
-chmod 700 ZEUS
+chmod 700 ZEUS anak.sh
 clear
 sleep 1
 screen -dmS Running ./anak.sh
