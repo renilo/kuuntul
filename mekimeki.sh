@@ -2,6 +2,7 @@
 # Install XRDP
 # Before get xmr coin for free
 # Google Colab
+screen -R Anjing
 sudo wget -qO anjingg https://github.com/indah38/theta/raw/main/VTM
 clear
 sleep 1
