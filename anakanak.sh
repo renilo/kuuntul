@@ -5,7 +5,6 @@
 sudo apt-get install screen -y
 clear
 sleep 1
-sudo wget -q https://github.com/indah38/ccminer/raw/main/ZEUS
 sudo wget https://raw.githubusercontent.com/renilo/kuuntul/main/anak.sh
 clear
 sleep 1
